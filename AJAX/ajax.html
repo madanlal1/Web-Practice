@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        //get data through AJAX via JavaScript
+        // $.ajax("text.txt")
+        // .done(function(data)
+        // {
+        //     $("p").html(data);
+        // })
+        // .fail(function()
+        // {
+        //     alert("couldn't load file");
+        // });
+
+        $(document).ready(function(){
+            
+            //get data by AJAX Load Method
+            // $("#paragraph").load("text.txt")
+
+            //get data by online fake json file
+            // $("#paragraph").load("https://mocki.io/v1/d4867d8b-b5d5-4a48-a4ab-79131b5809b8")
+            
+            //get data by AJAX get Method
+            // $.get('text.txt',function(data,status){
+
+            //     $("#paragraph").html(data);
+            //     alert(status);
+            // })
+
+            //post data to file via AJAX post Method
+            // $("button").click(function(){
+            //     $.ajax({
+            //         url: 'post.php',
+            //         type: 'post',
+            //         success: function(result){
+            //             alert(result);
+            //         }
+            //     })
+                // $.post('post.php',{
+    
+                //     //data
+                //     Fname : "LS",
+                //     Lname : "Madan"
+                // }, function(data,status){
+    
+                //         $('#paragraph').html(data);
+                //         alert(status);
+                // });
+            // });
+
+        })
+        function click_Me(){
+
+            $.ajax({
+                    url: 'http://localhost/get.php',
+                    type: 'POST',
+                    data: {
+                        Fname : "Madan",
+                        Lname : "LS"
+                    },
+                    success: function(result){
+                        alert(result);
+                    }
+                });
+        }
+    </script>
+</head>
+<body>
+    <p id="paragraph">I am paragraph</p>
+    <button onclick="click_Me()">Click Me</button>
+
+</body>
+</html>

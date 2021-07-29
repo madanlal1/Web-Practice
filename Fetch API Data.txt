@@ -1,0 +1,46 @@
+import React from "react";
+
+class Parent extends React.Component{
+
+    constructor(props)
+    {
+      super(props)
+      this.state={person:[]}
+    }
+    async componentDidMount()
+    {
+      let resopnse = await fetch("https://www.maciejtreder.com/asynchronous-javascript/directors/")
+      let data = await resopnse.json()
+      this.setState({person:data})
+    
+    }
+
+}
+
+class Child extends Parent
+{
+  render()
+  {
+   return (
+   <table border="2px">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+        </tr>
+
+      <tbody>
+                {this.state.person.map((user) => (
+                        
+                        <tr>
+                        <td>{user.id}</td>
+                        <td>{user.name}</td>
+                        </tr>
+                )
+                )}
+      </tbody>
+    </table>
+   )
+  }
+}
+
+export default Child;

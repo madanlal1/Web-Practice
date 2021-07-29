@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <style>
+        #ncrLogo
+        {
+            background-color: rgb(21, 148, 49);
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            padding: 20px;
+            color: white;
+        }
+        li
+        {
+            display: inline;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        li:hover
+        {
+            color: gray;
+            cursor: pointer;
+        }
+        h1
+        {
+            color: green;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        #imgFrame
+        {
+            border: 2px solid green;
+            color: white;
+        }
+        #bodyRow
+        {
+            background-color: gray;
+        }
+        #imeg
+        {
+            margin: auto;
+        }
+        button
+        {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1" id="ncrLogo"><b>NCR</b></div>
+            
+            <div class="col-sm-8">
+                <br>
+                <b>
+                <ul>
+                    <li>Who We Serve</li>
+                    <li>What We Offer</li>
+                    <li>About Us</li>
+                </ul>
+                </b>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li>Search</li>
+                    <li>How to buy</li>
+                    <li><b>MyNCR</b></li>
+                </ul>
+                <button class="btn btn-success">CONTACT US</button>
+            </div>
+        </div>
+        <div id="bodyRow" class="row">
+            <div class="row">
+                <br>
+            </div>
+            <div class="row">
+                <h1>THE PRIMER by NCR</h1>
+            </div>
+            <div class="row">
+                <br>
+                <br>
+            </div>
+            <div id="imeg" class="row">
+                <div class="col-sm-4">
+
+                    <div id="imgFrame">
+                        <img src="1.jpg" alt="img1" width="418px">
+                        <h4>How brick-and mortar business can win back customers in 2021</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                    <div id="imgFrame">
+                        <img src="2.jpg" alt="img2"  width="419px">
+                        <h4>Has restaurant loyalty ever been more important?</h4>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                    <div id="imgFrame"  width="419px">
+                        <img src="3.jpg" alt="img3">
+                        <h4>Is your ATM estate behind the curve</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
