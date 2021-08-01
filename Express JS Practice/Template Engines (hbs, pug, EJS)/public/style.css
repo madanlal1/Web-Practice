@@ -1,0 +1,44 @@
+#ncrLogo
+        {
+            background-color: rgb(21, 148, 49);
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            padding: 20px;
+            color: white;
+        }
+        li
+        {
+            display: inline;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        li:hover
+        {
+            color: gray;
+            cursor: pointer;
+        }
+        h1
+        {
+            color: green;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+        }
+        #imgFrame
+        {
+            border: 2px solid green;
+            color: white;
+        }
+        #bodyRow
+        {
+            background-color: gray;
+        }
+        #imeg
+        {
+            margin: auto;
+        }
+        button
+        {
+            float: right;
+        }
