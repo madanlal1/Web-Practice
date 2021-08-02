@@ -1,0 +1,4 @@
+const packageName = require('packageName');
+
+npm install packageName
+npm uninstall packageName
