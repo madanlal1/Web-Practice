@@ -1,0 +1,3 @@
+https://api.openweathermap.org/data/2.5/weather?q=Pune&units=metric&appid=39a9a737b07b4b703e3d1cd1e231eedc
+
+http://api.openweathermap.org/data/2.5/weather?q=${req.query.name}&units=metric&appid=39a9a737b07b4b703e3d1cd1e231eedc

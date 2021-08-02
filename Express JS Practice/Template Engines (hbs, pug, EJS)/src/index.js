@@ -30,6 +30,12 @@ app.get("/about", (req,res) => {
     res.render("about");
 })
 
+//404 error page
+app.get("*", (req,res) => {
+    res.render("404", {errorComment : "404 Page not found."});
+})
+
+
 app.listen(8000, () => {
     console.log("port no 8000 is listening");
 })
