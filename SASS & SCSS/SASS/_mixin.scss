@@ -1,0 +1,11 @@
+//Mixin (reuse of code)
+@mixin Color_Hover($size) {
+
+    color:lightcoral;
+    font-size: $size;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}

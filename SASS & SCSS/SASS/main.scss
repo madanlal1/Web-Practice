@@ -1,0 +1,19 @@
+@import "mixin";
+@import "var";
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: $bg-color;
+    align-items: center;
+    text-align: center;
+
+    //nesting of code
+    h1
+    {
+        @include Color_Hover(7rem);
+    }
+    p
+    {
+        @include Color_Hover(6rem);
+    }
+}

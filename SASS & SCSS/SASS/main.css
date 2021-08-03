@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightGreen;
+  align-items: center;
+  text-align: center;
+}
+* h1 {
+  color: lightcoral;
+  font-size: 7rem;
+  cursor: pointer;
+}
+* h1:hover {
+  color: white;
+}
+* p {
+  color: lightcoral;
+  font-size: 6rem;
+  cursor: pointer;
+}
+* p:hover {
+  color: white;
+}/*# sourceMappingURL=main.css.map */
