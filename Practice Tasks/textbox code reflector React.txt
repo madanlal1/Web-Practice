@@ -1,0 +1,35 @@
+import React from "react";
+
+class Child extends React.Component {
+
+  constructor (props) {
+      super(props)
+      this.state = {fullname: '' };
+      this.handleChange = this.handleChange.bind(this);
+  }
+
+
+handleChange(event) {
+     const {value, name} = event.target;
+     this.setState({ [name]: value })  
+  }
+render() {
+
+  return (
+    
+    
+        <div>
+          <form>
+          <input type="text" name="fullname"  onChange={this.handleChange}/>
+          <h3>{this.state.fullname}</h3>
+          <textarea type="text" name="description" onChange={this.handleChange}></textarea>
+          <h3>{this.state.description}</h3>
+          </form>
+        </div>
+  );
+
+}
+  
+}
+
+export default Child;
