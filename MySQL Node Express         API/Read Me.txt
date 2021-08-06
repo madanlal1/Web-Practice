@@ -1,0 +1,3 @@
+//npm init -y		//package.json file
+//npm i express mysql	//install package
+//npm i nodemon		//keep server updating
