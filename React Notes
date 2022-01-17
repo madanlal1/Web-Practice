@@ -1,3 +1,4 @@
 npm install -g create-react-app
 npx create-react-app appname    //app name in small letters (it's in vscode terminal)
 ctrl + backTick(`)             //vscode terminal
+React.Fragment => <></>
