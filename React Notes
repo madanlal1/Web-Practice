@@ -5,3 +5,4 @@ React.Fragment => <></>
 type nul > abc.txt             //create file using cmd
 notepad abc.txt                //open new file
 del abc.txt                    //delete file using cmd
+npm install                    //will install all dependencies
