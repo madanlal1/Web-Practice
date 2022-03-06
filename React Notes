@@ -8,3 +8,5 @@ del abc.txt                    //delete file using cmd
 npm install                    //will install all dependencies
 error lens                     //extension will highlight errors
 material icon theme            //extension will put theme on folder sturcture icons
+create-react-app <name>        //Prerequisite: name should be in small letters without space / containing folder name should not contain space
+
