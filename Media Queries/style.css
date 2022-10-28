@@ -1,0 +1,44 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+#main {
+    width: 100%;
+    height: 32rem;
+    background-color: lightblue;
+    border: 1px solid red;
+}
+#text, #image {
+    float: left;
+    width: 47%;
+    height: 25rem;
+    border: 1px solid red;
+    justify-content: center;
+    font-size: 2.1rem;
+    text-align: justify;
+    padding: 15px;
+    /* display: inline; */
+}
+
+@media (max-width : 1068px) {
+    #text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width : 786px) {
+    #text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width : 480px) {
+    #text, #image {
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+}
